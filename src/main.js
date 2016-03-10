@@ -21,7 +21,22 @@ app.on("window-all-closed", () => {
 // initialization and ready for creating browser windows.
 app.on("ready", () => {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  const Screen = require('screen');
+  const size = Screen.getPrimaryDisplay().size;
+  let mainWindow = new BrowserWindow({
+      left: 0,
+      top: 0,
+      width: size.width,
+      height: size.height,
+      frame: false,
+      show: true,
+      transparent: true,
+      resizable: false,
+      'always-on-top': true
+  });
+  // mainWindow.setIgnoreMouseEvents(true);
+  mainWindow.maximize();
+
 
   // and load the index.html of the app.
   mainWindow.loadUrl(`file://${__dirname}/index.html`);
