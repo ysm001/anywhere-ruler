@@ -24,7 +24,9 @@
   "homepage": "https://github.com/superbrothers/electron-boilerplate#readme",
   "dependencies": {
     "react": "^0.14.0-rc1",
-    "react-dom": "^0.14.0-rc1"
+    "react-dom": "^0.14.0-rc1",
+    "react-redux": "^4.4.0",
+    "redux-thunk": "^2.0.1"
   },
   "devDependencies": {
     "babel-core": "^5.8.24",
@@ -46,6 +48,7 @@
     "husky": "^0.10.1",
     "main-bower-files": "^2.9.0",
     "merge-stream": "^1.0.0",
+    "redux-devtools": "^3.1.1",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.2"
   }
