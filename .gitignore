@@ -1,0 +1,45 @@
+node_modules
+npm-debug.log
+.DS_Store
+bower_components
+.tmp
+.cache
+release
+### https://raw.github.com/github/gitignore/3ddb2f297fe8107c6c45a1afed1ff82204ae4227/Global/VIM.gitignore
+
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+
+### https://raw.github.com/github/gitignore/3ddb2f297fe8107c6c45a1afed1ff82204ae4227/Global/OSX.gitignore
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
