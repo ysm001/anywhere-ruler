@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'mixins';
+
+.sidebar {
+  background-color: $gray-darkest;
+  height: 100%;
+  width: 120px;
+}

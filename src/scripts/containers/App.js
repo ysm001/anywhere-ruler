@@ -1,8 +1,16 @@
 import React from 'react';
-import Home from '../components/Home';
+import Canvas from './Canvas';
+import Navigation from './Navigation';
+import Sidebar from './Sidebar';
 
 export default React.createClass({
   render() {
-    return (<Home />);
+    return (
+      <main>
+        <Navigation />
+        <Canvas />
+        <Sidebar />
+      </main>
+    );
   }
 });

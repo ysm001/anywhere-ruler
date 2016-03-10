@@ -1,3 +1,26 @@
-html, body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@import 'variables';
+@import 'mixins';
+@import 'navigation';
+@import 'sidebar';
+@import 'canvas';
+
+html,
+body {
+  background: none;
+  cursor: default;
+  font-family: $font-regular;
+  font-smoothing: subpixel-antialiased;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-rendering: optimizelegibility;
+  user-drag: none;
+  width: 100%;
+}
+
+#main,
+main {
+  height: 100%;
+  width: 100%;
 }
