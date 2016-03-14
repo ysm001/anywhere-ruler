@@ -3,7 +3,7 @@ import React from 'react';
 class VanishingPoint extends React.Component {
   render() {
     return (
-      <circle cx={this.props.cx} cy={this.props.cy} r={5} fill="red" />
+      <circle cx={this.props.x} cy={this.props.y} r="5" stroke="black" stroke-width="1" fill="none" />
     )
   }
 }

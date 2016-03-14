@@ -10,7 +10,7 @@ export default React.createClass({
     return (
       <div className="navigation">
         <AppBar
-          title={<span>Anywhere Ruler</span>}
+          title={<span>Perspective Ruler</span>}
           iconElementLeft={<IconButton><NavigationClose /></IconButton>}
           iconElementRight={<FlatButton label="Save" />}
         />
