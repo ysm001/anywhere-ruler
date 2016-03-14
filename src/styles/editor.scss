@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'mixins';
+
+.editor {
+  height: 100%;
+  width: 100%;
+
+  &__svg-container {
+    height: 100%;
+    width: 100%;
+  }
+}
