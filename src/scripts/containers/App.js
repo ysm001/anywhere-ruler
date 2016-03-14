@@ -1,5 +1,5 @@
 import React from 'react';
-import Canvas from './Canvas';
+import Editor from './Editor';
 import Navigation from './Navigation';
 import Sidebar from './Sidebar';
 
@@ -8,7 +8,7 @@ export default React.createClass({
     return (
       <main>
         <Navigation />
-        <Canvas />
+        <Editor />
       </main>
     );
   }

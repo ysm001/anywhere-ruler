@@ -31,7 +31,7 @@ app.on("ready", () => {
       frame: false,
       show: true,
       transparent: true,
-      resizable: false,
+      resizable: false
       // 'always-on-top': true
   });
   // mainWindow.setIgnoreMouseEvents(true);
