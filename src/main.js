@@ -32,7 +32,7 @@ app.on("ready", () => {
       show: true,
       transparent: true,
       resizable: false,
-      'always-on-top': true
+      // 'always-on-top': true
   });
   // mainWindow.setIgnoreMouseEvents(true);
   mainWindow.maximize();

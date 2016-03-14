@@ -9,7 +9,6 @@ export default React.createClass({
       <main>
         <Navigation />
         <Canvas />
-        <Sidebar />
       </main>
     );
   }

@@ -23,9 +23,11 @@
   },
   "homepage": "https://github.com/superbrothers/electron-boilerplate#readme",
   "dependencies": {
+    "material-ui": "^0.15.0-alpha.1",
     "react": "^0.14.0-rc1",
     "react-dom": "^0.14.0-rc1",
     "react-redux": "^4.4.0",
+    "react-tap-event-plugin": "^0.2.2",
     "redux-thunk": "^2.0.1"
   },
   "devDependencies": {
