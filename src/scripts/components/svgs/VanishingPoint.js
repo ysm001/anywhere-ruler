@@ -16,14 +16,9 @@ class VanishingPoint extends SvgComponent {
     const {position} = this.props;
     return (
       <circle cx={position.x} cy={position.y} r="5" stroke="black" strokeWidth="1" fill="white"
-      onMouseDown={::this.handleMouseDown} />
+      onMouseDown={this.handleMouseDown.bind(this)} />
     )
   }
-}
-
-VanishingPoint.propTypes = {
-  cx:  React.PropTypes.number.isRequired,
-  cy:  React.PropTypes.number.isRequired
 }
 
 export default connect(state => state.Svg)(VanishingPoint);

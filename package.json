@@ -51,6 +51,8 @@
     "main-bower-files": "^2.9.0",
     "merge-stream": "^1.0.0",
     "redux-devtools": "^3.1.1",
+    "redux-devtools-dock-monitor": "^1.1.0",
+    "redux-devtools-log-monitor": "^1.0.5",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.2"
   }
