@@ -1,6 +1,15 @@
 import React from 'react';
+import * as SvgActions from '../../actions/SvgActions';
+import {bindActionCreators} from 'redux';
 
 class SvgComponent extends React.Component {
+  constructor(props) {
+    super(props);
+
+    const {initX, initY} = this.props;
+    this.setPosition(initX, initY);
+  }
+
   onDrag(e) {}
 
   handleMouseDown(e) {
@@ -13,11 +22,11 @@ class SvgComponent extends React.Component {
       y: e.clientY - position.y
     }
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = ((e) => {
       e.cx = e.clientX - offset.x;
       e.cy = e.clientY - offset.y;
       this.onDrag(e);
-    }.bind(this);
+    }).bind(this);
 
     const handleMouseUp = (e) => {
       document.body.removeEventListener('mousemove', handleMouseMove);
@@ -28,6 +37,14 @@ class SvgComponent extends React.Component {
     document.body.addEventListener('mouseup', handleMouseUp);
 
 		return false;
+  }
+
+  setPosition(x, y) {
+    console.log(`set pos: ${this.props.id}`);
+    const {id, dispatch} = this.props;
+    const actions = bindActionCreators(SvgActions, dispatch);
+
+    actions.setPosition(id, {x: x, y: y});
   }
 }
 

@@ -6,14 +6,16 @@ import {connect} from 'react-redux';
 
 class VanishingPoint extends SvgComponent {
   onDrag(e) {
-    const {dispatch} = this.props;
-    const actions = bindActionCreators(SvgActions, dispatch);
-
-    actions.setPosition({x: e.cx, y: e.cy});
+    console.log(this.props);
+    this.setPosition(id, e.cx, e.cy);
   }
 
   render() {
-    const {position} = this.props;
+    // const {position} = this.props[this.props.id];
+    console.log(`render: ${this.props.id}`);
+    console.log(this.props);
+    const position = {x: 0, y: 0};
+
     return (
       <circle cx={position.x} cy={position.y} r="5" stroke="black" strokeWidth="1" fill="white"
       onMouseDown={this.handleMouseDown.bind(this)} />
@@ -21,4 +23,4 @@ class VanishingPoint extends SvgComponent {
   }
 }
 
-export default connect(state => state.Svg)(VanishingPoint);
+export default connect()(VanishingPoint);
